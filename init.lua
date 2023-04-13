@@ -18,3 +18,10 @@ require('plugins-config.terminal')
 require('plugins-config.indent')
 require('plugins-config.autopairs')
 require('plugins-config.comment')
+
+-- All commands that executes automatically
+require('autocommands')
+
+-- All keybinding, except for plugin specific.
+-- Ex. lsp
+require('keybindings')
