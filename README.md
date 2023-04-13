@@ -8,22 +8,22 @@
 
 ## List of keybindings
 
-> Leader key has been remapped to "Space".
+> Leader key has been remapped to <kbd>Space</kbd>
 
 | Keybinding | Action |
 | ---------- | ------ |
-| \<leader>b | Open netrw file browser |
-| \<leader>bc | Close netrw file browser |
-| \<leader>v | Create vertical window split |
-| \<leader>h | Move focus to left window |
-| \<leader>l | Move focus to right window |
-| \<leader>df | Format the whole document/file |
-| \<leader>sf | Search for files |
-| \<leader>sw | Search for words |
-| \<leader>sg | Search with grep |
-| \<leader>sd | Search all diagnostics |
-| gd | Go to definition |
-| gr | Go to references |
-| D | Open floating diagnostic window (hover) |
-| \<leader>ca | Show code actions |
-| \<leader>rn | Rename |
+| <kbd>Space</kbd> + <kbd>b</kbd> | Open netrw file browser |
+| <kbd>Space</kbd> + <kbd>bc</kbd> | Close netrw file browser |
+| <kbd>Space</kbd> + <kbd>v</kbd> | Create vertical window split |
+| <kbd>Space</kbd> + <kbd>h</kbd> | Move focus to left window |
+| <kbd>Space</kbd> + <kbd>l</kbd> | Move focus to right window |
+| <kbd>Space</kbd> + <kbd>df</kbd> | Format the whole document/file |
+| <kbd>Space</kbd> + <kbd>sf</kbd> | Search for files |
+| <kbd>Space</kbd> + <kbd>sw</kbd> | Search for words |
+| <kbd>Space</kbd> + <kbd>sg</kbd> | Search with grep |
+| <kbd>Space</kbd> + <kbd>sd</kbd> | Search all diagnostics |
+| <kbd>gd</kbd> | Go to definition |
+| <kbd>gr</kbd> | Go to references |
+| <kbd>D</kbd> | Open floating diagnostic window (hover) |
+| <kbd>Space</kbd> + <kbd>ca</kbd> | Show code actions |
+| <kbd>Space</kbd> + <kbd>rn</kbd> | Rename |
