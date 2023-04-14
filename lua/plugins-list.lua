@@ -14,7 +14,16 @@ end
 
 local packer_bootstrap = ensure_packer()
 
-require("packer").startup(function(use)
+local packer = require('packer')
+packer.init {
+  display = {
+    open_fn = function()
+      return require('packer.util').float { border = 'rounded' }
+    end,
+  }
+}
+
+return packer.startup(function(use)
   use { "wbthomason/packer.nvim" }
 
   use "sainnhe/gruvbox-material"
@@ -58,4 +67,3 @@ require("packer").startup(function(use)
     require('packer').sync()
   end
 end)
-
