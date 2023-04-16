@@ -53,7 +53,11 @@ return packer.startup(function(use)
   }
 
   use { "windwp/nvim-autopairs" }
+
+  -- Indentation
   use { "nmac427/guess-indent.nvim" }
+  use "lukas-reineke/indent-blankline.nvim"
+
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }

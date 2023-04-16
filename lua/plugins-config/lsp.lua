@@ -4,7 +4,7 @@
 local lsp = require("lsp-zero").preset("recommended")
 local cmp = require("cmp")
 
-local cmp_select = {behavior = cmp.SelectBehavior.Select}
+local cmp_select = { behavior = cmp.SelectBehavior.Select }
 cmp.setup({
   mapping = lsp.defaults.cmp_mappings({
     ["<C-Space>"] = cmp.mapping.complete(),
@@ -15,8 +15,8 @@ cmp.setup({
   }),
   sources = {
     { name = "nvim_lsp" },
-    { name = "path" },
     { name = "luasnip" },
+    { name = "path" },
     {
       name = "buffer",
       keyword_length = 5,
@@ -50,6 +50,11 @@ lsp.configure("lua_ls", {
   }
 })
 
+-- Dart
+lsp.setup_servers({
+  'dartls', force = true
+})
+
 lsp.set_preferences({
   suggest_lsp_servers = false
 })
@@ -66,6 +71,6 @@ end)
 lsp.setup()
 
 vim.diagnostic.config({
-    virtual_text = true,
-    signs = false
+  virtual_text = true,
+  signs = false
 })

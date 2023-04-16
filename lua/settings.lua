@@ -12,6 +12,7 @@ vim.opt.clipboard = "unnamedplus"                       -- access to system clip
 vim.opt.completeopt = { "menu", "menuone", "noselect" } -- mostly for cmp
 vim.opt.cmdheight = 1                                   -- more space for command line
 vim.opt.scrolloff = 8                                   -- minimal number of screen lines to keep above and below the cursor
+vim.opt.wrap = false                                    -- disable line wrap
 
 vim.opt.number = true                                   -- numbered lines
 vim.opt.relativenumber = true                           -- relative numbers line
@@ -32,3 +33,8 @@ vim.opt.updatetime = 50
 vim.cmd([[
   filetype plugin indent on
 ]])
+
+-- For indentation guides
+vim.opt.list = true
+vim.opt.listchars:append "space:⋅"
+vim.opt.listchars:append "eol:↴"

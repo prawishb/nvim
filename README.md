@@ -4,7 +4,14 @@
 
 ## Prerequisites
 
-- [ripgrep](https://github.com/BurntSushi/ripgrep) (telescope fuzzy finding)
+- [Ripgrep](https://github.com/BurntSushi/ripgrep) (telescope fuzzy finding)
+- [Nerd fonts](https://www.nerdfonts.com/) (optional)
+
+## Installation
+
+```shell
+git clone https://github.com/prawishb/nvim ~/.config/nvim
+```
 
 ## List of keybindings
 
