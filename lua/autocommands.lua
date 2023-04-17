@@ -1,15 +1,17 @@
 -- Author: Prawish Biharie <biharieprawish@gmail.com>
 -- Description: Commands that runs automatically, ex. format on save.
 
+local autocmd = vim.api.nvim_create_autocmd
+
 -- Format on save
-vim.api.nvim_create_autocmd("BufWritePre", {
+autocmd("BufWritePre", {
   pattern = "",
   desc = "Automatically format when saving a file",
   command = ":silent lua vim.lsp.buf.format()"
 })
 
 -- Show cursorline only on active window
-vim.api.nvim_create_autocmd({ "InsertLeave", "WinEnter" }, {
+autocmd({ "InsertLeave", "WinEnter" }, {
   callback = function()
     local ok, cl = pcall(vim.api.nvim_win_get_var, 0, "auto-cursorline")
     if ok and cl then
@@ -18,7 +20,7 @@ vim.api.nvim_create_autocmd({ "InsertLeave", "WinEnter" }, {
     end
   end,
 })
-vim.api.nvim_create_autocmd({ "InsertEnter", "WinLeave" }, {
+autocmd({ "InsertEnter", "WinLeave" }, {
   callback = function()
     local cl = vim.wo.cursorline
     if cl then
@@ -29,7 +31,7 @@ vim.api.nvim_create_autocmd({ "InsertEnter", "WinLeave" }, {
 })
 
 -- Disable auto comment when insert new line after comment
-vim.api.nvim_create_autocmd("bufEnter", {
+autocmd("bufEnter", {
   group = vim.api.nvim_create_augroup("FormatOptions", {}),
   pattern = "*",
   callback = function()
