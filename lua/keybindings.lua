@@ -10,6 +10,9 @@ local default_opts = {
   silent = true,
 }
 
+vim.keymap.set({ "n", "v" }, "<leader>d", "\"_d", default_opts, { desc = "[D]elete without copying" })
+
+-- Netrw file browser
 vim.keymap.set("n", "<leader>b", ":Ex<CR>", default_opts, { desc = "Open file [B]rowser" })
 vim.keymap.set("n", "<leader>bc", ":Rex<CR>", default_opts, { desc = "[C]lose file [B]rowser" })
 

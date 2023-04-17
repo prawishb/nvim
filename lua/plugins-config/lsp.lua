@@ -71,6 +71,9 @@ end)
 lsp.setup()
 
 vim.diagnostic.config({
-  virtual_text = true,
+  virtual_text = {
+    prefix = '●',
+    severity_sort = true,
+  },
   signs = false
 })

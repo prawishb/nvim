@@ -52,11 +52,25 @@ return packer.startup(function(use)
     }
   }
 
+  -- Automatically add closing pair of brackets etc...
   use { "windwp/nvim-autopairs" }
 
   -- Indentation
   use { "nmac427/guess-indent.nvim" }
   use "lukas-reineke/indent-blankline.nvim"
+
+  -- Lua
+  use {
+    "folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim",
+    config = function()
+      require("todo-comments").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
 
   use {
     'nvim-lualine/lualine.nvim',
