@@ -15,6 +15,7 @@ opt.completeopt = { "menu", "menuone", "noselect" } -- mostly for cmp
 opt.cmdheight = 1                                   -- more space for command line
 opt.scrolloff = 8                                   -- minimal number of screen lines to keep above and below the cursor
 opt.wrap = false                                    -- disable line wrap
+opt.hidden = true                                   -- for toggle terminal to not close
 
 opt.number = true                                   -- numbered lines
 opt.relativenumber = true                           -- relative numbers line
