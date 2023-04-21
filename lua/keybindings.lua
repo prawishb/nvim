@@ -27,6 +27,8 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", default_opts)
 vim.keymap.set("n", "<leader>v", ":vsplit<CR><C-w>l", default_opts, { desc = "[V]ertical split" })
 vim.keymap.set("n", "<leader>h", ":wincmd h<CR>", default_opts, { desc = "Move to left window" })
 vim.keymap.set("n", "<leader>l", ":wincmd l<CR>", default_opts, { desc = "Move to right window" })
+vim.keymap.set("n", "<leader>j", ":wincmd j<CR>", default_opts, { desc = "Move to bottom window" })
+vim.keymap.set("n", "<leader>k", ":wincmd k<CR>", default_opts, { desc = "Move to upper window" })
 
 -- Document
 vim.keymap.set("n", "<leader>df", ":lua vim.lsp.buf.format()<CR>", default_opts, { desc = "[D]ocument [F]ormat" })

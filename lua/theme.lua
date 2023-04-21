@@ -5,4 +5,3 @@ vim.g.gruvbox_material_background = 'hard'        -- use hard version of materia
 vim.g.gruvbox_material_better_performance = 1     -- for better performance
 vim.g.gruvbox_material_transparent_background = 1 -- gruvbox material transparent background
 vim.cmd("colorscheme gruvbox-material")
-

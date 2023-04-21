@@ -50,6 +50,12 @@ lsp.configure("lua_ls", {
   }
 })
 
+-- Typescript
+lsp.configure("tsserver", {
+  filetype = { 'typescript', 'typescriptreact', 'typescript.tsx' },
+  cmd = { 'typescript-language-server', '--stdio' },
+})
+
 -- Dart
 lsp.setup_servers({
   'dartls', force = true

@@ -13,6 +13,7 @@ require('theme')
 -- Plugins config
 require('plugins-config.lsp')
 require('plugins-config.treesitter')
+require('plugins-config.telescope')
 require('plugins-config.lualine')
 require('plugins-config.terminal')
 require('plugins-config.indent')
