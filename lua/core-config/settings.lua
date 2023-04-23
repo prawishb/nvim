@@ -34,6 +34,10 @@ vim.cmd([[
   filetype plugin indent on
 ]])
 
+-- Change leader key to "Space"
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 -- For indentation guides
 opt.list = true
 opt.listchars:append "space:⋅"

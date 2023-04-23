@@ -1,7 +1,3 @@
--- Change leader key to "Space"
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
 local default_opts = {
   noremap = true,
   silent = true,
