@@ -1,6 +1,3 @@
--- Author: Prawish Biharie <biharieprawish@gmail.com>
--- Description: All keybindings.
-
 -- Change leader key to "Space"
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
@@ -11,6 +8,7 @@ local default_opts = {
 }
 
 vim.keymap.set({ "n", "v" }, "<leader>d", "\"_d", default_opts, { desc = "[D]elete without copying" })
+vim.keymap.set('n', '<C-s>', ':w<CR>', default_opts, { desc = '[S]ave' })
 
 -- Netrw file browser
 vim.keymap.set("n", "<leader>b", ":Ex<CR>", default_opts, { desc = "Open file [B]rowser" })

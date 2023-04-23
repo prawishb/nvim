@@ -1,6 +1,3 @@
--- Author: Prawish Biharie <biharieprawish@gmail.com>
--- Description: List of plugins that I use
-
 local ensure_packer = function()
   local fn = vim.fn
   local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
@@ -27,6 +24,7 @@ return packer.startup(function(use)
   use { "wbthomason/packer.nvim" }
 
   use "sainnhe/gruvbox-material"
+  use "Shatur/neovim-ayu"
 
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use {

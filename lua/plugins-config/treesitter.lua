@@ -1,6 +1,3 @@
--- Author: Biharie Prawish <biharieprawish@gmail.com>
--- Description: Treesitter config file
-
 require 'nvim-treesitter.configs'.setup {
   ensure_installed = { "lua", "dart" },
   sync_install = false,
@@ -12,4 +9,3 @@ require 'nvim-treesitter.configs'.setup {
     enable = true,
   }
 }
-

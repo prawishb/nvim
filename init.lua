@@ -1,6 +1,3 @@
--- Author: Prawish Biharie <biharieprawish@gmail.com>
--- Description: Simple neovim config.
-
 -- Neovim settings
 require('settings')
 
@@ -24,5 +21,5 @@ require('plugins-config.comment')
 require('autocommands')
 
 -- All keybinding, except for plugin specific.
--- Ex. lsp
+-- Example: lsp keybindings are in lsp.lua file
 require('keybindings')

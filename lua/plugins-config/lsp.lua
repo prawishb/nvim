@@ -1,6 +1,3 @@
--- Author: Prawish Biharie <biharieprawish@gmail.com>
--- Description: LSP and CMP config file
-
 local lsp = require("lsp-zero").preset("recommended")
 local cmp = require("cmp")
 

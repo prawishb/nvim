@@ -1,6 +1,3 @@
--- Author: Prawish Biharie <biharieprawish@gmail.com>
--- Description: Commands that runs automatically, ex. format on save.
-
 local autocmd = vim.api.nvim_create_autocmd
 
 -- Format on save

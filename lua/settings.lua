@@ -1,6 +1,3 @@
--- Author: Prawish Biharie <biharieprawish@gmail.com>
--- Descripton: All neovim settings goes in this file
-
 local opt = vim.opt
 
 vim.encoding = "utf-8"                              -- encoding
