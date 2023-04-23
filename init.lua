@@ -1,11 +1,11 @@
 -- Neovim settings
-require('settings')
+require('core-config.settings')
 
 -- Plugins list (packer)
 require('plugins-list')
 
 -- Theme
-require('theme')
+require('core-config.theme')
 
 -- Plugins config
 require('plugins-config.lsp')
@@ -18,7 +18,7 @@ require('plugins-config.autopairs')
 require('plugins-config.comment')
 
 -- All commands that executes automatically
-require('autocommands')
+require('core-config.autocommands')
 
 -- All keybinding, except for plugin specific.
 -- Example: lsp keybindings are in lsp.lua file

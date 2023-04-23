@@ -3,7 +3,8 @@
 -- vim.g.gruvbox_material_transparent_background = 1 -- gruvbox material transparent background
 -- vim.cmd("colorscheme gruvbox-material")
 
-vim.cmd('colorscheme ayu-dark')
+require('ayu.config').mirage = true
+require('ayu').colorscheme()
 
 -- Make all background transparent
 vim.cmd [[

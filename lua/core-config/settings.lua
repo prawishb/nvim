@@ -37,3 +37,7 @@ vim.cmd([[
 -- For indentation guides
 opt.list = true
 opt.listchars:append "space:⋅"
+
+-- Netrw settings
+vim.g.netrw_banner = 0    -- Disable heading info
+vim.g.netrw_liststyle = 3 -- Tree view
