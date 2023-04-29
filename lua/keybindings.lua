@@ -7,7 +7,8 @@ vim.keymap.set({ "n", "v" }, "<leader>d", "\"_d", default_opts, { desc = "[D]ele
 vim.keymap.set('n', '<C-s>', ':w<CR>', default_opts, { desc = '[S]ave' })
 
 -- Netrw file browser
-vim.keymap.set("n", "<leader>b", ":Ex<CR>", default_opts, { desc = "Open file [B]rowser" })
+--vim.keymap.set("n", "<leader>b", ":Ex<CR>", default_opts, { desc = "Open file [B]rowser" })
+vim.keymap.set("n", "<leader>b", ":call ToggleNetrw()<CR>", default_opts, { desc = "Open file [B]rowser" })
 vim.keymap.set("n", "<leader>bc", ":Rex<CR>", default_opts, { desc = "[C]lose file [B]rowser" })
 
 -- Remove highlight when pressing enter

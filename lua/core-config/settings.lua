@@ -26,7 +26,7 @@ opt.autoindent = true                               -- indent a new line the sam
 opt.smartindent = true                              -- better indenting
 
 opt.hlsearch = false                                -- disable previous search highlight
-opt.timeoutlen = 450                                -- time to wait for a mapped sequence to complete
+opt.timeoutlen = 100                                -- time to wait for a mapped sequence to complete
 opt.updatetime = 50
 
 -- allow auto-indenting depending on file type

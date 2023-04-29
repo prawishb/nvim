@@ -33,7 +33,8 @@ cmp.setup({
 })
 
 lsp.ensure_installed({
-  "lua_ls",
+  'lua_ls',
+  'tsserver',
 })
 
 -- Fix global vim warning

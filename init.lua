@@ -20,6 +20,9 @@ require('plugins-config.comment')
 -- All commands that executes automatically
 require('core-config.autocommands')
 
+-- User defined functions
+require('functions.netrw')
+
 -- All keybinding, except for plugin specific.
 -- Example: lsp keybindings are in lsp.lua file
 require('keybindings')
